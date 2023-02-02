@@ -8,3 +8,8 @@ runtime: shiny
 ```{r setup, include=FALSE}
 knitr::opts_chunks$set(echo = TRUE)
 pacman::p_load(rtweet, syuzhet, tidyverse, DT, stringr, wordcloud, tidytext)
+```
+
+## Introduction
+
+This R Markdown document is made interactive using Shiny to demonstrate my abilities to make interactive data visualizations.

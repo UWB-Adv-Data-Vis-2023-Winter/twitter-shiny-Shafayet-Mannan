@@ -13,3 +13,7 @@ pacman::p_load(rtweet, syuzhet, tidyverse, DT, stringr, wordcloud, tidytext)
 ## Introduction
 
 This R Markdown document is made interactive using Shiny to demonstrate my abilities to make interactive data visualizations.
+
+```{r load data, include=FALSE}
+load('data.Rdata')
+```

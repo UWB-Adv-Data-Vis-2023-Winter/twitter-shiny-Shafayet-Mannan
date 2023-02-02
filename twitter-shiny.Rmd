@@ -17,3 +17,9 @@ This R Markdown document is made interactive using Shiny to demonstrate my abili
 ```{r load data, include=FALSE}
 load('data.Rdata')
 ```
+
+## Twitter data {.tabset}
+
+### Recent Rstats tweets
+
+### Tweets from @RLadiesSeattle

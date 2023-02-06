@@ -26,9 +26,9 @@ load('data.Rdata')
 
 The plot below shows time series of #rstats tweets and can be filtered by language.
 
-```{r tweets, echo=False}
+```{r tweets, echo=FALSE}
 inputPanel(
-  selectInput("tweetlang", label = "Language of tweets:", 
+  selectInput("tweetlang", label = "Language of tweets:",
               choices = unique(tweets$lang), selected = "en", multiple = TRUE)
 )
 ```

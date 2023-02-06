@@ -39,6 +39,11 @@ renderPlot({
          subtitle = paste0(format(min(tweets$created_at), "%d %B %Y")," to ", format(max(tweets$created_at), "%d %B %Y")), 
          caption = "Data collected from Twitter's REST API via rtweet") + theme_minimal()
 })
+
+renderDataTable({tweets %>%
+    filter(lang %in% input$tweetlang) %>% 
+    select(screen_name, text, lang, favorite_count, retweet_count)
+  })
 ```
 
 ### Tweets from @RLadiesSeattle

@@ -47,3 +47,14 @@ renderDataTable({tweets %>%
 ```
 
 ### Tweets from @RLadiesSeattle
+
+The plots below show a wordle of terms, and a time series of tweets by @RLadiesSeattle. 
+The time series can be plotted with different sources to see when different devices were used to tweet.
+
+#### Time series plot of tweets
+
+```{r user, echo=FALSE}
+inputPanel(
+  selectInput("tweetsource", label = "Source of tweets:",
+              choices = unique(user_timeline$source), selected = unique(user_timeline$source), multiple = TRUE)
+)

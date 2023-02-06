@@ -22,4 +22,13 @@ load('data.Rdata')
 
 ### Recent Rstats tweets
 
+The plot below shows time series of #rstats tweets and can be filtered by language.
+
+```{r tweets, echo=False}
+inputPanel(
+  selectInput("tweetlang", label = "Language of tweets:", 
+              choices = unique(tweets$lang), selected = "en", multiple = TRUE)
+)
+```
+
 ### Tweets from @RLadiesSeattle

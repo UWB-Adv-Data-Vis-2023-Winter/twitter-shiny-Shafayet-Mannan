@@ -67,5 +67,12 @@ renderPlot({
        caption = "Data collected from Twitter's REST API via rtweet") + 
     theme_minimal()
 })
+
+renderDataTable({
+  user_timeline %>%
+    filter(source %in% input$tweetsource) %>%
+    select(text, favorite_count, retweet_count, source) %>%
+    arrange(desc(retweet_count))
+})
 ```
 
